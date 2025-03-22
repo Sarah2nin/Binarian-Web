@@ -1,0 +1,82 @@
+:root {
+    --NightDeep: 6, 26, 51;
+    --NightLow: 23, 33, 86;
+    --NightMid: 68, 48, 142;
+
+    --NightHigh: 160, 166, 238;
+    --NightShallow: 203, 204, 237;
+}
+
+/*ISSUE CHECKER*/
+
+body {
+    border: solid, silver, 2px;
+}
+main {
+    border: solid, red, 1px;
+}
+header, nav, section, article, footer, aside {
+    border: solid, yellow, 1px;
+}
+figure, details, mark, summary, time {
+    border: solid, lime, 1px;
+}
+img, map, ul, table {
+    border: solid, cyan, 1px;
+}
+h1, h2, h3, h4, h5, h6, p, li, figcaption, th, td {
+    border: solid, magenta, 1px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "ellograph-cf", monospace;
+    font-weight: 400;
+    font-style: normal;
+    background-color: rgb(var(--NightDeep));
+    background-image: radial-gradient(circle at bottom, rgb(var(--NightMid)), rgb(var(--NightDeep)));
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header {
+    height: 10%;
+    width: 90%;
+}
+
+aside {
+    background-color: rgb(var(--NightDeep));
+    height: 100%;
+    width: 9.7%;
+}
+
+main {
+    height: 80%;
+    width: 90%;
+}
+
+footer {
+    height: 10%;
+    width: 90%;
+}
+
+p, li, strong, span, h1, h2, h3, h4, h5, h6 {
+    color: rgb(var(--NightShallow));
+}
+
+a {
+    color: rgb(var(--NightHigh));
+    text-underline-offset: 4px;
+}
+
+strong {
+    font-weight: 900;
+}
+
+::placeholder {
+    font-style: italic;
+}
