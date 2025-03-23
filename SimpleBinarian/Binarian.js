@@ -1,4 +1,4 @@
-/* Binarian-Web Copyright (C) 2025 Lyxminx
+/* Binarian-Web Copyright (C) 2025 Lyxminx and Sarahtonin
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by

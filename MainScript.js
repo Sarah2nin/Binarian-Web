@@ -1,4 +1,4 @@
-/* Binarian-Web Copyright (C) 2025 Lyxminx
+/* Binarian-Web Copyright (C) 2025 Lyxminx and Sarahtonin
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -13,7 +13,12 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program. If not, see <https://www.gnu.org/licenses/>. */
 
-document.getElementById("ArtiBox").style.height = (document.getElementById("MainBox").offsetHeight)-(document.getElementById("HeadBox").offsetHeight)-(document.getElementById("FootBox").offsetHeight)
+document.getElementById("ArtiBox").style.height = (document.getElementById("MainBox").offsetHeight)-(document.getElementById("HeadBox").offsetHeight)-(document.getElementById("FootBox").offsetHeight)-50
 
+console.log("Head: "+document.getElementById("HeadBox").offsetHeight)
+console.log("Main: "+document.getElementById("MainBox").offsetHeight)
+console.log("Foot: "+document.getElementById("FootBox").offsetHeight)
 
-console.log(document.getElementById("MainBox").offsetHeight)-(document.getElementById("HeadBox").offsetHeight)-(document.getElementById("FootBox").offsetHeight)
+console.log("Head+Foot: "+(document.getElementById("HeadBox").offsetHeight+document.getElementById("FootBox").offsetHeight))
+
+console.log((document.getElementById("MainBox").offsetHeight)-(document.getElementById("HeadBox").offsetHeight)-(document.getElementById("FootBox").offsetHeight))
