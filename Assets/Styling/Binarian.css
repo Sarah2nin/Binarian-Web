@@ -22,7 +22,7 @@ along with this program. If not, see <https://www.gnu.org/licenses/>. */
     --NightShallow: 203, 204, 237;
 }
 
-/*ISSUE CHECKER*/
+/*ISSUE CHECKER
 
 body {
     border: solid, silver, 2px;
@@ -41,7 +41,7 @@ img, map, ul, table {
 }
 h1, h2, h3, h4, h5, h6, p, li, figcaption, th, td {
     border: solid, magenta, 1px;
-}
+}*/
 
 * {
     padding: 0;
@@ -52,35 +52,48 @@ body {
     font-family: "ellograph-cf", monospace;
     font-weight: 400;
     font-style: normal;
-    background-color: rgb(var(--NightDeep));
+    background-color: rgb(var(--NightLow));
     background-image: radial-gradient(circle at bottom, rgb(var(--NightMid)), rgb(var(--NightDeep)));
     display: flex;
     flex-wrap: wrap;
 }
 
-header {
-    height: 10%;
-    width: 90%;
+aside, header, footer, article {
+    padding: 20px 40px 20px;
 }
 
 aside {
     background-color: rgb(var(--NightDeep));
-    height: 100%;
-    width: 9.7%;
+    max-height: 100%;
+    width: auto;
+}
+
+nav {
+    max-width: 80%;
+    max-height: 80%;
 }
 
 main {
-    height: 80%;
+    height: 95%;
     width: 90%;
+    display:unset;
+    flex-wrap: nowrap;
+    margin: auto;
 }
 
-footer {
-    height: 10%;
-    width: 90%;
+header, footer {
+    max-height: 5%;
+    max-width: 100%;
 }
 
-p, li, strong, span, h1, h2, h3, h4, h5, h6 {
+article {
+    height: auto
+}
+
+a, p, li, strong, span, h1, h2, h3, h4, h5, h6 {
     color: rgb(var(--NightShallow));
+    width: fit-content;
+    margin: 10px;
 }
 
 a {
