@@ -19,6 +19,23 @@ console.log("Head: "+document.getElementById("HeadBox").offsetHeight)
 console.log("Main: "+document.getElementById("MainBox").offsetHeight)
 console.log("Foot: "+document.getElementById("FootBox").offsetHeight)
 
+const AsideHeight = document.getElementById("AsideBox").offsetHeight
+const NavHeight = document.getElementById("NavBox").offsetHeight
+const Imgs = document.querySelectorAll("img")
+const ImgCount = Imgs.length
+
+let ImgHeight = 0
+Imgs.forEach(img => {
+    ImgHeight += img.offsetHeight
+})
+
+document.querySelectorAll("figure").forEach(fig => {
+    fig.style.margin = (NavHeight - ImgHeight) / ImgCount +"px" +" auto "+ (NavHeight - ImgHeight) / ImgCount +"px"
+})
+
+const AsideWhiteSpace = AsideHeight-NavHeight
+document.getElementById("NavBox").style.margin = AsideWhiteSpace/2+"px" +" auto "+ AsideWhiteSpace/2+"px"
+
 console.log("Head+Foot: "+(document.getElementById("HeadBox").offsetHeight+document.getElementById("FootBox").offsetHeight))
 
 console.log((document.getElementById("MainBox").offsetHeight)-(document.getElementById("HeadBox").offsetHeight)-(document.getElementById("FootBox").offsetHeight))
