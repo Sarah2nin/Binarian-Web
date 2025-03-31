@@ -56,6 +56,7 @@ body {
     background-image: radial-gradient(circle at bottom, rgb(var(--NightMid)), rgb(var(--NightDeep)));
     display: flex;
     flex-wrap: wrap;
+    height: 100%;
 }
 
 header, footer, article {
@@ -129,4 +130,11 @@ strong {
 
 span {
     font-size: 4px;
+}
+
+figure a {
+    width: fit-content;
+    height: fit-content;
+    margin: 0;
+    padding: 0;
 }
