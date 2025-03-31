@@ -1,5 +1,6 @@
 # Binarian-Web
 A website for the Binarian encryption method made by Lyxminxx and Sarahtonin!
+https://binarian-web.pages.dev
 
 ## The python programs for Binarian
 https://github.com/Lyxminxx/binarian
