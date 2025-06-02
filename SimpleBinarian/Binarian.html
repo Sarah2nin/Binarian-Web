@@ -17,26 +17,61 @@ along with this program. If not, see <https://www.gnu.org/licenses/>. -->
     <head>
         <title>Binarian >Simple</title>
 
-        <link rel="stylesheet" href="..//Assets/Styling/Binarian.css">
-        <link rel="icon" type="image/x-icon" href="Assets/Images/Binarian Icon Single.png">
+        <link rel="stylesheet" href="../Assets/Styling/Binarian.css">
+        <link rel="icon" type="image/x-icon" href="../Assets/Images/Binarian Icon Single.png">
         <link rel="stylesheet" href="https://use.typekit.net/idz1bdq.css">
     </head>
 
     <body>
-        <header>
+        <aside id="AsideBox">
+            <nav id="NavBox">
+                <figure name="IconBox">
+                    <a href="../index.html">
+                        <img src="../Assets/Images/Home.png" alt="Icon for homepage.">
+                    </a>
+                </figure>
 
-        </header>
+                <figure name="IconBox">
+                    <a href="../SimpleBinarian/Binarian.html">
+                        <img src="../Assets/Images/Binarian Icon Single.png" alt="Icon for simple Binarian.">
+                    </a>
+                </figure>
 
-        <main>
-            <input type="text" placeholder="Type input here.." id="UnbinarianInput">
-            <button onclick="ToBinarian(UnbinarianInput.value)">Convert</button>
-            <p id="BinarianOutput">This is where the converted data will arrive.</p>
+                <figure name="IconBox">
+                    <a href="../AdvBinarian/AdvBinarian.html">
+                        <img src="../Assets/Images/Binarian Icon Double.png" alt="Icon for advanced Binarian.">
+                    </a>
+                </figure>
+
+                <figure name="IconBox">
+                    <a href="https://github.com/Sarah2nin/Binarian-Web">
+                        <img src="../Assets/Images/Github.png" alt="Icon for Binarian Github page.">
+                    </a>
+                </figure>
+
+                <figure name="IconBox">
+                    <a href="https://docs.google.com/document/d/1GbeMP6cOYcfIYHNHcKdncNw1eaWXyJFDsmDsTVMakkk/edit?usp=sharing">
+                        <img src="../Assets/Images/Wiki.png" alt="Icon for Binarian wiki page.">
+                    </a>
+                </figure>
+            </nav>
+        </aside>
+
+        <main id="MainBox">
+            <header id="HeadBox">
+                <h1>Convert text to Binarian!</h1>
+            </header>
+
+            <article id="ArtiBox">
+                <input type="text" placeholder="Type input here.." id="UnbinarianInput">
+                <button onclick="ToBinarian(UnbinarianInput.value)">Convert</button>
+                <p id="BinarianOutput">This is where the converted data will arrive.</p>
+            </article>
+        
+            <footer id="FootBox">
+                <p>Binarian-Web Copyright (C) 2025 Lyxminx and Sarahtonin.</p>
+            </footer>
         </main>
-
-        <footer>
-            <p>Binarian made by Lyxminx and Sarahtonin.</p>
-        </footer>
     </body>
-
     <script src="Binarian.js"></script>
 </html>
