@@ -86,19 +86,19 @@ figure {
 
 img {
     width: 80%;
-    border: solid, rgb(var(--NightMid)), 5px;
-    border-radius: 30px;
-    transition: all 500ms ease-in-out;
+    border: solid, rgb(var(--NightShallow)), 5px;
+    border-radius: 10px;
+    transition: all 400ms ease-in-out;
 }
 
 img:hover {
-    width: 83%;
-    border: solid, rgb(var(--NightShallow)), 5px;
-    transition: all 500ms ease-in-out;
+    border: solid, rgb(var(--NightHigh)), 5px;
+    border-radius: 30px;
+    transition: all 400ms ease-in-out;
 }
 
 main {
-    height: 95%;
+    height: 90%;
     width: 90%;
     flex-wrap: nowrap;
     margin: auto;
@@ -137,4 +137,9 @@ figure a {
     height: fit-content;
     margin: 0;
     padding: 0;
+}
+
+.Title {
+    text-decoration: underline;
+    text-underline-offset: 15px;
 }
