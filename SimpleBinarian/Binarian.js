@@ -99,3 +99,7 @@ function ToBinarian(Data) {
     BinarianOutput.innerHTML = BinarianData;
     return BinarianData;
 }
+
+function FromBinarian(Data) {
+
+}
