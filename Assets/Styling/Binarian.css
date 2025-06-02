@@ -124,10 +124,6 @@ strong {
     font-weight: 900;
 }
 
-::placeholder {
-    font-style: italic;
-}
-
 span {
     font-size: 4px;
 }
@@ -142,4 +138,40 @@ figure a {
 .Title {
     text-decoration: underline;
     text-underline-offset: 15px;
+}
+
+input {
+    font-family: "ellograph-cf", monospace;
+    font-weight: 400;
+    font-style: normal;
+    background-color: rgb(var(--NightDeep));
+    border: solid, rgb(var(--NightShallow)), 5px;
+    border-radius: 10px;
+    padding: 5px;
+    color: rgb(var(--NightShallow));
+}
+
+::placeholder {
+    font-family: "ellograph-cf", monospace;
+    font-weight: 400;
+    font-style: italic;
+    color: rgb(var(--NightShallow));
+}
+
+button {
+    font-family: "ellograph-cf", monospace;
+    font-weight: 400;
+    font-style: normal;
+    background-color: rgb(var(--NightLow));
+    border: solid, rgb(var(--NightShallow)), 5px;
+    border-radius: 10px;
+    padding: 5px;
+    color: rgb(var(--NightShallow));
+    transition: all 400ms ease-in-out;
+}
+
+button:hover {
+    border: solid, rgb(var(--NightHigh)), 5px;
+    border-radius: 30px;
+    transition: all 400ms ease-in-out;
 }
