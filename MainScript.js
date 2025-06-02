@@ -34,8 +34,8 @@ document.querySelectorAll("figure").forEach(fig => {
 })
 
 const AsideWhiteSpace = AsideHeight-NavHeight
+
 document.getElementById("NavBox").style.margin = AsideWhiteSpace/2+"px" +" auto "+ AsideWhiteSpace/2+"px"
 
 console.log("Head+Foot: "+(document.getElementById("HeadBox").offsetHeight+document.getElementById("FootBox").offsetHeight))
-
 console.log((document.getElementById("MainBox").offsetHeight)-(document.getElementById("HeadBox").offsetHeight)-(document.getElementById("FootBox").offsetHeight))

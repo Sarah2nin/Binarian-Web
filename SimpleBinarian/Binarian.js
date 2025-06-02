@@ -46,6 +46,39 @@ const BinarianLetters =
     å:"(11101)"
 }
 
+const Letters = 
+[
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
+    "g",
+    "h",
+    "i",
+    "j",
+    "k",
+    "l",
+    "m",
+    "n",
+    "o",
+    "p",
+    "q",
+    "r",
+    "s",
+    "t",
+    "u",
+    "v",
+    "w",
+    "x",
+    "y",
+    "z",
+    "æ",
+    "ø",
+    "å"
+]
+
 const Specials = /[ `!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/;
 
 function ToBinarian(Data) {
@@ -101,5 +134,51 @@ function ToBinarian(Data) {
 }
 
 function FromBinarian(Data) {
+    const LowerData = Data.toLowerCase();
+    let ArrayData = []
+    let TempDigits = ""
 
+    for (let Count = 0; Count < LowerData.length; Count++) {
+        const Character = LowerData[Count];
+
+        if (Character == ("(" || ")")) {
+            console.log("( or ) removed..")
+        } 
+        
+        else {
+            if (TempDigits) {
+                ArrayData.push(TempDigits.toString(10));
+                TempDigits = "";
+            }
+            ArrayData.push(Letters[Character.toString(10)]);
+        }
+    }
+
+    let UnbinarianData = '';
+
+    console.log(ArrayData);
+
+    for (Count = 0; Count < ArrayData.length; Count++) {
+        if (/\d/.test(ArrayData[Count])) {
+            console.log(ArrayData[Count] + " twas a number.");
+            BinarianData += "[" + (((Number(ArrayData[Count]) >>> 0).toString(2)).padStart(8, '0')) + "]";
+        } 
+        
+        else {
+            if (Specials.test(ArrayData[Count])) {
+                console.log(ArrayData[Count] + " twas special.");
+                BinarianData += ArrayData[Count];
+            } 
+            
+            else {
+                console.log(ArrayData[Count] + " twas a string.");
+                BinarianData += BinarianLetters[ArrayData[Count]];
+            }
+        }
+    }
+
+    console.log(UnbinarianData);
+
+    UnbinarianOutput.innerHTML = UnbinarianData;
+    return UnbinarianData;
 }
